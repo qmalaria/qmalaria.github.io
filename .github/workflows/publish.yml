@@ -1,0 +1,54 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable static site generation
+        uses: actions/configure-pages@v5
+
+      - name: Check out website source
+        uses: actions/checkout@v5
+
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          cran: 'https://cloud.r-project.org/'
+          r-version: '4.5.2'
+
+      - name: Install pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+        with:
+          pandoc-version: '3.8.3'
+
+      - name: Install rmarkdown
+        run: Rscript -e 'install.packages(c("rmarkdown","blogdown"), repos="https://cloud.r-project.org/")'
+
+      - name: install hugo
+        run: Rscript -e 'blogdown::install_hugo(version="0.156.0")'
+
+      - name: Render blog
+        run: Rscript -e 'blogdown::build_site()'
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+      - name: Publish website
+        uses: actions/deploy-pages@v4
+        id: deployment

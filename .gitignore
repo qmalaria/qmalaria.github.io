@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+.hugo_build.lock
+/public/
+/resources/
+# Ignore files generated when serving the website locally
+*.html
+*_files/
