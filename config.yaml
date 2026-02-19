@@ -1,21 +1,27 @@
 baseurl: /
-languageCode: en-US
-title: A Hugo website
+languageCode: en-AU
+title: qMalaria
 theme: hugo-lithium
 ignoreFiles:
   - \.Rmd$
   - \.Rmarkdown$
   - _cache$
 permalinks:
-  post: /:year/:month/:day/:slug/
+  news: /news/:year/:month/:day/:slug/
 menu:
   main:
-    - name: About
-      url: /about/
-    - name: GitHub
-      url: https://github.com/rstudio/blogdown
-    - name: Twitter
-      url: https://twitter.com/rstudio
+    - name: Home
+      url: /
+      weight: 1
+    - name: Our Team
+      url: /our-team/
+      weight: 2
+    - name: Projects
+      url: /projects/
+      weight: 3
+    - name: News
+      url: /news/
+      weight: 4
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
