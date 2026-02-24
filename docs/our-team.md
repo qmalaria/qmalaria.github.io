@@ -1,3 +1,7 @@
+---
+icon: lucide/users
+---
+
 # Our team
 
 - Professor Julie Simpson

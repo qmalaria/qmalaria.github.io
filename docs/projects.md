@@ -1,3 +1,7 @@
+---
+icon: lucide/earth
+---
+
 # Projects
 
 We have developed biologically informed mathematical models for studying antimalarial drug action and cost-effectiveness models for evaluating screening tests used to determine the safety of the antimalarial treatment, primaquine.
