@@ -1,5 +1,5 @@
 ---
-layout: single
+icon: lucide/rocket
 ---
 
 # Welcome to qMalaria

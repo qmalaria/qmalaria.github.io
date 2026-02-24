@@ -1,5 +1,0 @@
----
-layout: all-posts
----
-
-# News
