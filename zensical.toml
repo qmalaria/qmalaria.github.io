@@ -10,6 +10,7 @@ nav = [
   { "Welcome" = "index.md" },
   { "Our Team" = "our-team.md" },
   { "Projects" = "projects.md" },
+  { "Resources" = "resources.md" },
 ]
 
 [project.theme]
