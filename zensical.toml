@@ -16,6 +16,10 @@ nav = [
   ] },
   { "Projects" = [
     "projects/index.md",
+    "projects/pkpd.md",
+    "projects/cost-effectiveness.md",
+    "projects/optimal-sampling.md",
+    "projects/radical-cure.md",
   ] },
   { "Resources" = [
     "resources/index.md",

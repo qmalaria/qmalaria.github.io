@@ -21,7 +21,7 @@ To improve the design of future studies we have developed a software package tha
     Artemisinin derivatives are the first line treatment for falciparum malaria.
     Alarmingly, resistance to these drugs has emerged in Southeast Asia, jeopardising malaria control.
 
-    [:lucide-arrow-right: Read more](#)
+    [:lucide-arrow-right: Read more](pkpd.md)
 
 - Economic modelling to improve the management of malaria
     {: .project .title }
@@ -33,7 +33,7 @@ To improve the design of future studies we have developed a software package tha
     A single infectious bite with vivax malaria can cause multiple malaria episodes through dormant liver parasites.
     Radical cure is needed to clear these liver parasites, but the drug can cause haemolysis in individuals with glucose-6-phosphate-dehydrogenase (G6PD) deficiency.
 
-    [:lucide-arrow-right: Read more](#)
+    [:lucide-arrow-right: Read more](cost-effectiveness.md)
 
 - Optimal Sampling Schedules
     {: .project .title }
@@ -44,7 +44,7 @@ To improve the design of future studies we have developed a software package tha
 
     There exists a suite of tools within the field of "optimal experimental design" that have been developed to answer the question: "What is the best way to allocate my limited resources, in order to learn the most about the PK-profile of this drug?".
 
-    [:lucide-arrow-right: Read more](#)
+    [:lucide-arrow-right: Read more](optimal-sampling.md)
 
 - Meta-analyses to inform optimal primaquine radical cure
     {: .project .title }
@@ -53,8 +53,8 @@ To improve the design of future studies we have developed a software package tha
 
     ---
 
-    We have used individual patient data meta-analyses undertaken through collaboration with the WorldWide Antimalarial Resistance Netowrk (WWARN) to improve our understanding of the risks and benefits of primaquine radical cure and inform policymakers.
+    We have used individual patient data meta-analyses undertaken through collaboration with the WorldWide Antimalarial Resistance Network (WWARN) to improve our understanding of the risks and benefits of primaquine radical cure and inform policymakers.
 
-    [:lucide-arrow-right: Read more](#)
+    [:lucide-arrow-right: Read more](radical-cure.md)
 
 </div>
