@@ -11,9 +11,15 @@ extra_css = [
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
   { "Welcome" = "index.md" },
-  { "Our Team" = "our-team.md" },
-  { "Projects" = "projects.md" },
-  { "Resources" = "resources.md" },
+  { "Our Team" = [
+    "our-team/index.md",
+  ] },
+  { "Projects" = [
+    "projects/index.md",
+  ] },
+  { "Resources" = [
+    "resources/index.md",
+  ] },
 ]
 
 [project.theme]
@@ -108,7 +114,7 @@ features = [
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
     # https://zensical.org/docs/setup/navigation/#navigation-path
-    "navigation.path",
+    #"navigation.path",
 
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
@@ -176,3 +182,11 @@ media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
+
+[project.markdown_extensions.attr_list]
+
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
