@@ -1,0 +1,10 @@
+/* Add a white background to logos in dark mode. */
+[data-md-color-scheme="slate"] img.logo {
+    background-color: white;
+    min-width: 200px;
+}
+/* Vertically centre logos in card grids. */
+.grid.cards > ul > li:has(img.logo) {
+    display: flex;
+    align-items: center;
+}

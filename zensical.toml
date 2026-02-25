@@ -4,6 +4,9 @@ site_description = "Data Scientists who use novel quantitative methods to improv
 site_author = "qMalaria"
 #site_url = "https://www.example.com/"
 copyright = ""
+extra_css = [
+  "assets/custom_styles.css",
+]
 
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
@@ -15,8 +18,8 @@ nav = [
 
 [project.theme]
 language = "en"
-logo = "logo.png"
-favicon = "logo.png"
+logo = "images/logo.png"
+favicon = "images/logo.png"
 features = [
     # Zensical includes an announcement bar. This feature allows users to
     # dismiss it when they have read the announcement.
