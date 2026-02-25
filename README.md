@@ -35,3 +35,116 @@ zensical serve --open
 ```
 
 **This preview will automatically update** when you modify the pages in the `./docs` directory.
+
+## Website structure
+
+Each page corresponds to a Markdown file in the `./docs` directory:
+
+- `./docs/index.md` is the homepage ("Welcome to qMalaria");
+- `./docs/our-team/index.md` is the "Our Team" page;
+    - Each profile page is a separate Markdown file in the `./docs/our-team` directory;
+- `./docs/projects/index.md` is the "Projects" page;
+    - Each project page is a separate Markdown file in the `./docs/resources` directory;
+- `./docs/resources/index.md` is the "Resources" page.
+
+## How to add a new page
+
+1. Create a new Markdown file in the `./docs` directory, or and sub-directory inside `./docs`.
+2. Create a heading that defines the page title, and add the page content below:
+
+    ```md
+    # Page title
+
+    Content goes here ...
+    ```
+3. Consider defining a page icon (e.g., search the [Lucide icon set](https://lucide.dev/icons/) for a suitable icon):
+
+    ```md
+    ---
+    icon: lucide/icon-name
+    ---
+
+    # Page title
+
+    Content goes here ...
+    ```
+
+4. Add the Markdown file to the navigation table in the [zensical.toml](./zensical.toml) file (see the [navigation documentation](https://zensical.org/docs/setup/navigation/) for further details):
+
+    ```toml
+    nav = [
+      # ...
+      "my-new-page.md",
+      # ...
+    ]
+    ```
+
+    **Important:** don't include the `./docs` part of the filename in the navigation table.
+
+5. Build the updated website and check that the new page is displayed as intended:
+
+    ```sh
+    source ./venv/bin/activate
+    zensical serve --open
+    ```
+
+6. Save ("commit") your changes and upload ("push") them to the website repository:
+
+    ```sh
+    git add zensical.toml docs/my-new-page.md
+    git commit -m "Add a page about XXX"
+    git push
+    ```
+
+## How to add a project
+
+1. Add a project image to the `./docs/images` directory (e.g., `project-xyz.png`);
+
+2. Create a project page in the `./docs/projects` directory (e.g., `./docs/projects/xyz.md`; see [How to add a new page](#how-to-add-a-new-page));
+
+3. Add a new tile to the projects page (`./docs/projects/index.md`) that links to this new project page:
+
+    ```md
+    - Project title goes here
+        {: .project .title }
+
+        ![Project title goes here](/images/project-xyz.png)
+
+        ---
+
+        A brief description of the project goes here.
+
+        [:lucide-arrow-right: Read more](xyz.md)
+
+    ```
+
+4. Add the new project page to the navigation table, under "Projects":
+
+    ```toml
+    nav = [
+      # ...
+      { "Projects" = [
+        "projects/index.md",
+        # ...
+        "projects/xyz.md",
+      ] },
+      # ...
+    ]
+    ```
+
+5. Build the updated website and check that the new project page and project tile are both displayed as intended:
+
+    ```sh
+    source ./venv/bin/activate
+    zensical serve --open
+    ```
+
+6. Save ("commit") your changes and upload ("push") them to the website repository:
+
+    ```sh
+    git add zensical.toml
+    git add docs/projects/index.md docs/projects/xyz.md
+    git add docs/images/project-xyz.png
+    git commit -m "Add a project page for XYZ"
+    git push
+    ```
