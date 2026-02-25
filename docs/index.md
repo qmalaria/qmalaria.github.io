@@ -14,4 +14,5 @@ We have developed biologically informed mathematical models for studying antimal
 - [![Australian Centre of Research Excellence in Malaria Elimination](images/logo-acreme.svg){ .logo }](https://acreme.edu.au/)
 - [![Policy relevant infectious disease simulation and mathematical modelling](images/logo-prism.png){ .logo }](https://prism.edu.au/)
 - [![The Victorian Centre for Biostatistics](images/logo-vicbiostat.png){ .logo }](https://www.vicbiostat.org.au/)
+- [![The University of Melbourne](images/logo-uom.svg){ .logo .uom }](https://www.unimelb.edu.au/)
 </div>

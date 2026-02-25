@@ -3,10 +3,21 @@
     background-color: white;
     min-width: 200px;
 }
+/* Limit the size of the UoM logo. */
+img.logo.uom {
+    max-width: 200px;
+    max-height: 200px;
+}
 /* Vertically centre logos in card grids. */
 .grid.cards > ul > li:has(img.logo) {
     display: flex;
     align-items: center;
+}
+/* Horizontally centre logos. */
+.grid.cards > ul > li > a:has(img.logo) {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 /* Horizontally centre profile photos. */
 .grid.cards > ul > li > p:has(img.person) {
