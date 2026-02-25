@@ -8,3 +8,19 @@
     display: flex;
     align-items: center;
 }
+/* Horizontally centre profile photos. */
+.grid.cards > ul > li > p:has(img.person) {
+    text-align: center;
+}
+/* Limit the size of profile photos. */
+img.person {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 0 auto;
+}
+/* Use a larger, heavier, centred font for project and profile names. */
+.person.title, .project.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 125%;
+}

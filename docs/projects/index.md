@@ -10,7 +10,9 @@ Our models are validated on clinical and experimental data (see [the ACREME webs
 To improve the design of future studies we have developed a software package that implements a Bayesian Optimal Design method.
 
 <div class="grid cards" markdown>
-- **Within-host malaria modelling to improve the treatment of malaria**
+
+- Within-host malaria modelling to improve the treatment of malaria
+    {: .project .title }
 
     ![Within-host malaria modelling to improve the treatment of malaria](/images/project-pkpd.png)
 
@@ -21,7 +23,8 @@ To improve the design of future studies we have developed a software package tha
 
     [:lucide-arrow-right: Read more](#)
 
-- **Economic modelling to improve the management of malaria**
+- Economic modelling to improve the management of malaria
+    {: .project .title }
 
     ![Economic modelling to improve the management of malaria](/images/project-cost-effectiveness.png)
 
@@ -32,7 +35,8 @@ To improve the design of future studies we have developed a software package tha
 
     [:lucide-arrow-right: Read more](#)
 
-- **Optimal Sampling Schedules**
+- Optimal Sampling Schedules
+    {: .project .title }
 
     ![Optimal Sampling Schedules](/images/project-optimal-sampling.png)
 
@@ -42,7 +46,8 @@ To improve the design of future studies we have developed a software package tha
 
     [:lucide-arrow-right: Read more](#)
 
-- **Meta-analyses to inform optimal primaquine radical cure**
+- Meta-analyses to inform optimal primaquine radical cure
+    {: .project .title }
 
     ![Meta-analyses to inform optimal primaquine radical cure](/images/project-radical-cure.png)
 

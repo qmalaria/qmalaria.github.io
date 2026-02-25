@@ -4,26 +4,66 @@ icon: lucide/users
 
 # Our team
 
-- Professor Julie Simpson
+<div class="grid cards" markdown>
 
-- Professor James McCaw
+- ![Professor Julie Simpson](/images/julie-simpson.jpg){ .person }
 
-- Dr Sophie Zaloumis
+    Professor Julie Simpson
+    {: .person .title }
 
-- A/Prof David Price
+- ![Professor James McCaw](/images/james-mccaw.jpg){ .person }
 
-- Dr Saber Dini
+    Professor James McCaw
+    {: .person .title }
 
-- A/Prof Angela Devine
+- ![Dr Sophie Zaloumis](/images/sophie-zaloumis.jpg){ .person }
 
-- Dr Pengxing Cao
+    Dr Sophie Zaloumis
+    {: .person .title }
 
-- Dr Emily Karahalios
+- ![A/Prof David Price](/images/david-price.jpg){ .person }
 
-- Dr Rob Commons
+    A/Prof David Price
+    {: .person .title }
 
-- Dr Ali Hagiri
+- ![Dr Saber Dini](/images/saber-dini.jpg){ .person }
 
-- Parinaz Mehdipour
+    Dr Saber Dini
+    {: .person .title }
 
-- Jeyamalar Thurai Rathnam
+- ![A/Prof Angela Devine](/images/angela-devine.jpg){ .person }
+
+    A/Prof Angela Devine
+    {: .person .title }
+
+- ![Dr Pengxing Cao](/images/pengxing-cao.jpg){ .person }
+
+    Dr Pengxing Cao
+    {: .person .title }
+
+- ![Dr Emily Karahalios](/images/emily-karahalios.jpg){ .person }
+
+    Dr Emily Karahalios
+    {: .person .title }
+
+- ![Dr Rob Commons](/images/rob-commons.jpg){ .person }
+
+    Dr Rob Commons
+    {: .person .title }
+
+- ![Dr Ali Haghiri](/images/ali-haghiri.jpg){ .person }
+
+    Dr Ali Haghiri
+    {: .person .title }
+
+- ![Parinaz Mehdipour](/images/parinaz-mehdipour.jpg){ .person }
+
+    Parinaz Mehdipour
+    {: .person .title }
+
+- ![Jeyamalar Thurai Rathnam](/images/jeyamalar-thurai-rathnam.jpg){ .person }
+
+    Jeyamalar Thurai Rathnam
+    {: .person .title }
+
+</div>
