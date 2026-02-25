@@ -13,6 +13,7 @@ nav = [
   { "Welcome" = "index.md" },
   { "Our Team" = [
     "our-team/index.md",
+    "our-team/julie-simpson.md",
   ] },
   { "Projects" = [
     "projects/index.md",

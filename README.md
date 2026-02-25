@@ -148,3 +148,61 @@ Each page corresponds to a Markdown file in the `./docs` directory:
     git commit -m "Add a project page for XYZ"
     git push
     ```
+
+## How to add a team member profile
+
+1. Add a profile photo to the `./docs/images` directory (e.g., `some-person.jpg`);
+
+2. Create a profile page in the `./docs/our-team` directory (e.g., `./docs/our-team/some-person.md`; see [How to add a new page](#how-to-add-a-new-page)):
+
+    ```md
+    ---
+    icon: lucide/square-user-round
+    ---
+
+    # Some Person
+
+    Profile text goes here
+
+    [Link text](other-website-URL-here){ .md-button .md-button--primary }
+    ```
+3. Add a new tile to the team page (`./docs/our-team/index.md`) that links to this new profile page:
+
+    ```md
+    - ![Some Person](/images/some-person.jpg){ .person }
+
+        [Some Person](some-person.md)
+        {: .person .title}
+
+    ```
+
+4. Add the new profile page to the navigation table, under "Our Team":
+
+    ```toml
+    nav = [
+      # ...
+      { "Our Team" = [
+        "our-team/index.md",
+        # ...
+        "our-team/some-person.md",
+      ] },
+      # ...
+    ]
+    ```
+
+5. Build the updated website and check that the new project page and project tile are both displayed as intended:
+
+    ```sh
+    source ./venv/bin/activate
+    zensical serve --open
+    ```
+
+6. Save ("commit") your changes and upload ("push") them to the website repository:
+
+    ```sh
+    git add zensical.toml
+    git add docs/our-team/index.md docs/our-team/some-person.md
+    git add docs/images/some-person.png
+    git commit -m "Add a profile for Some Person"
+    git push
+    ```

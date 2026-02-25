@@ -8,7 +8,7 @@ icon: lucide/users
 
 - ![Professor Julie Simpson](/images/julie-simpson.jpg){ .person }
 
-    Professor Julie Simpson
+    [Professor Julie Simpson](julie-simpson.md)
     {: .person .title }
 
 - ![Professor James McCaw](/images/james-mccaw.jpg){ .person }
