@@ -108,7 +108,7 @@ Each page corresponds to a Markdown file in the `./docs` directory:
     - Project title goes here
         {: .project .title }
 
-        ![Project title goes here](/images/project-xyz.png)
+        ![Project title goes here](../images/project-xyz.png)
 
         ---
 
@@ -169,7 +169,7 @@ Each page corresponds to a Markdown file in the `./docs` directory:
 3. Add a new tile to the team page (`./docs/our-team/index.md`) that links to this new profile page:
 
     ```md
-    - ![Some Person](/images/some-person.jpg){ .person }
+    - ![Some Person](../images/some-person.jpg){ .person }
 
         [Some Person](some-person.md)
         {: .person .title}

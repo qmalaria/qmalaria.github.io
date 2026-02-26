@@ -14,7 +14,7 @@ To improve the design of future studies we have developed a software package tha
 - Within-host malaria modelling to improve the treatment of malaria
     {: .project .title }
 
-    ![Within-host malaria modelling to improve the treatment of malaria](/images/project-pkpd.png)
+    ![Within-host malaria modelling to improve the treatment of malaria](../images/project-pkpd.png)
 
     ---
 
@@ -26,7 +26,7 @@ To improve the design of future studies we have developed a software package tha
 - Economic modelling to improve the management of malaria
     {: .project .title }
 
-    ![Economic modelling to improve the management of malaria](/images/project-cost-effectiveness.png)
+    ![Economic modelling to improve the management of malaria](../images/project-cost-effectiveness.png)
 
     ---
 
@@ -38,7 +38,7 @@ To improve the design of future studies we have developed a software package tha
 - Optimal Sampling Schedules
     {: .project .title }
 
-    ![Optimal Sampling Schedules](/images/project-optimal-sampling.png)
+    ![Optimal Sampling Schedules](../images/project-optimal-sampling.png)
 
     ---
 
@@ -49,7 +49,7 @@ To improve the design of future studies we have developed a software package tha
 - Meta-analyses to inform optimal primaquine radical cure
     {: .project .title }
 
-    ![Meta-analyses to inform optimal primaquine radical cure](/images/project-radical-cure.png)
+    ![Meta-analyses to inform optimal primaquine radical cure](../images/project-radical-cure.png)
 
     ---
 
