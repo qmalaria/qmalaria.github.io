@@ -76,4 +76,9 @@ icon: lucide/users
     Dr Rob Moss
     {: .person .title }
 
+- ![Meg Tully](../images/meg-tully.jpg){ .person }
+
+    Meg Tully
+    {: .person .title }
+
 </div>
