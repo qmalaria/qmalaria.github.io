@@ -66,4 +66,14 @@ icon: lucide/users
     Jeyamalar Thurai Rathnam
     {: .person .title }
 
+- ![Dr Megha Rajasekhar](../images/megha-rajasekhar.jpg){ .person }
+
+    Dr Megha Rajasekhar
+    {: .person .title }
+
+- ![Dr Rob Moss](../images/rob-moss.jpg){ .person }
+
+    Dr Rob Moss
+    {: .person .title }
+
 </div>
