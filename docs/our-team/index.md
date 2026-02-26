@@ -11,19 +11,9 @@ icon: lucide/users
     [Professor Julie Simpson](julie-simpson.md)
     {: .person .title }
 
-- ![Professor James McCaw](../images/james-mccaw.jpg){ .person }
-
-    Professor James McCaw
-    {: .person .title }
-
-- ![Dr Sophie Zaloumis](../images/sophie-zaloumis.jpg){ .person }
-
-    Dr Sophie Zaloumis
-    {: .person .title }
-
 - ![A/Prof David Price](../images/david-price.jpg){ .person }
 
-    A/Prof David Price
+    [A/Prof David Price](david-price.md)
     {: .person .title }
 
 - ![Dr Saber Dini](../images/saber-dini.jpg){ .person }
@@ -36,34 +26,14 @@ icon: lucide/users
     [A/Prof Angela Devine](angela-devine.md)
     {: .person .title }
 
-- ![Dr Pengxing Cao](../images/pengxing-cao.jpg){ .person }
+- ![A/Prof Emily Karahalios](../images/emily-karahalios.jpg){ .person }
 
-    Dr Pengxing Cao
-    {: .person .title }
-
-- ![Dr Emily Karahalios](../images/emily-karahalios.jpg){ .person }
-
-    Dr Emily Karahalios
+    [A/Prof Emily Karahalios](emily-karahalios.md)
     {: .person .title }
 
 - ![A/Prof Rob Commons](../images/rob-commons.jpg){ .person }
 
     [A/Prof Rob Commons](rob-commons.md)
-    {: .person .title }
-
-- ![Dr Ali Haghiri](../images/ali-haghiri.jpg){ .person }
-
-    Dr Ali Haghiri
-    {: .person .title }
-
-- ![Parinaz Mehdipour](../images/parinaz-mehdipour.jpg){ .person }
-
-    Parinaz Mehdipour
-    {: .person .title }
-
-- ![Jeyamalar Thurai Rathnam](../images/jeyamalar-thurai-rathnam.jpg){ .person }
-
-    Jeyamalar Thurai Rathnam
     {: .person .title }
 
 - ![Dr Megha Rajasekhar](../images/megha-rajasekhar.jpg){ .person }
