@@ -33,22 +33,22 @@ icon: lucide/users
 
 - ![Dr Megha Rajasekhar](../images/megha-rajasekhar.jpg){ .person }
 
-    Dr Megha Rajasekhar
+    [Dr Megha Rajasekhar](megha-rajasekhar.md)
     {: .person .title }
 
 - ![Dr Rob Moss](../images/rob-moss.jpg){ .person }
 
-    Dr Rob Moss
+    [Dr Rob Moss](rob-moss.md)
     {: .person .title }
 
 - ![Meg Tully](../images/meg-tully.jpg){ .person }
 
-    Meg Tully
+    [Meg Tully](meg-tully.md)
     {: .person .title }
 
 - ![Patrick Abraham](../images/patrick-abraham.jpg){ .person }
 
-    Patrick Abraham
+    [Patrick Abraham](patrick-abraham.md)
     {: .person .title }
 
 </div>
