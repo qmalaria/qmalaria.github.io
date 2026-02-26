@@ -14,6 +14,7 @@ nav = [
   { "Our Team" = [
     "our-team/index.md",
     "our-team/julie-simpson.md",
+    "our-team/saber-dini.md",
   ] },
   { "Projects" = [
     "projects/index.md",

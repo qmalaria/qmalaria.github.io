@@ -28,7 +28,7 @@ icon: lucide/users
 
 - ![Dr Saber Dini](/images/saber-dini.jpg){ .person }
 
-    Dr Saber Dini
+    [Dr Saber Dini](saber-dini.md)
     {: .person .title }
 
 - ![A/Prof Angela Devine](/images/angela-devine.jpg){ .person }
