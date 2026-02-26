@@ -3,6 +3,8 @@ site_name = "qMalaria"
 site_description = "Data Scientists who use novel quantitative methods to improve malaria treatment and control."
 site_author = "qMalaria"
 #site_url = "https://www.example.com/"
+repo_url = "https://github.com/qmalaria/qmalaria.github.io"
+edit_uri = "edit/master/docs/"
 copyright = ""
 extra_css = [
   "assets/custom_styles.css",
@@ -42,7 +44,7 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.edit",
+    "content.action.edit",
 
     # If you have a repository configured and turn on this feature, Zensical
     # will generate a button that allows the user to view the Markdown
