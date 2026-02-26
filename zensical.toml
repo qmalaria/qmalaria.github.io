@@ -28,6 +28,7 @@ nav = [
   ] },
   { "Resources" = [
     "resources/index.md",
+    "resources/publications.md",
   ] },
 ]
 
