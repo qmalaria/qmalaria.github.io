@@ -16,11 +16,6 @@ icon: lucide/users
     [A/Prof David Price](david-price.md)
     {: .person .title }
 
-- ![Dr Saber Dini](../images/saber-dini.jpg){ .person }
-
-    [Dr Saber Dini](saber-dini.md)
-    {: .person .title }
-
 - ![A/Prof Angela Devine](../images/angela-devine.jpg){ .person }
 
     [A/Prof Angela Devine](angela-devine.md)
@@ -49,6 +44,11 @@ icon: lucide/users
 - ![Meg Tully](../images/meg-tully.jpg){ .person }
 
     Meg Tully
+    {: .person .title }
+
+- ![Patrick Abraham](../images/patrick-abraham.jpg){ .person }
+
+    Patrick Abraham
     {: .person .title }
 
 </div>
