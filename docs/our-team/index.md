@@ -46,9 +46,9 @@ icon: lucide/users
     Dr Emily Karahalios
     {: .person .title }
 
-- ![Dr Rob Commons](../images/rob-commons.jpg){ .person }
+- ![A/Prof Rob Commons](../images/rob-commons.jpg){ .person }
 
-    Dr Rob Commons
+    [A/Prof Rob Commons](rob-commons.md)
     {: .person .title }
 
 - ![Dr Ali Haghiri](../images/ali-haghiri.jpg){ .person }
