@@ -33,7 +33,7 @@ icon: lucide/users
 
 - ![A/Prof Angela Devine](../images/angela-devine.jpg){ .person }
 
-    A/Prof Angela Devine
+    [A/Prof Angela Devine](angela-devine.md)
     {: .person .title }
 
 - ![Dr Pengxing Cao](../images/pengxing-cao.jpg){ .person }
