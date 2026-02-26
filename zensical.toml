@@ -17,6 +17,7 @@ nav = [
     "our-team/index.md",
     "our-team/julie-simpson.md",
     "our-team/saber-dini.md",
+    "our-team/rob-commons.md",
   ] },
   { "Projects" = [
     "projects/index.md",
