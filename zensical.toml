@@ -35,6 +35,7 @@ nav = [
   { "Resources" = [
     "resources/index.md",
     "resources/publications.md",
+    "resources/tools.md",
   ] },
 ]
 
