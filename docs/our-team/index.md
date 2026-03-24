@@ -51,4 +51,14 @@ icon: lucide/users
     [Patrick Abraham](patrick-abraham.md)
     {: .person .title }
 
+- ![Kathy Nguyen](../images/kathy-nguyen.jpg){ .person }
+
+    [Kathy Nguyen](kathy-nguyen.md)
+    {: .person .title }
+  
+- ![Chaya Weerasinghe](../images/chaya-weerasinghe.jpg){ .person }
+
+    [Chaya Weerasinghe](chaya-weerasinghe.md)
+    {: .person .title }
+
 </div>
