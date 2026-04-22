@@ -61,4 +61,9 @@ icon: lucide/users
     [Chaya Weerasinghe](chaya-weerasinghe.md)
     {: .person .title }
 
+- ![Rabiah al Adawiyah](../images/rabiah-al-adawiyah.jpg){ .person }
+
+    [Rabiah al Adawiyah](rabiah-al-adawiyah.md)
+    {: .person .title }
+
 </div>
