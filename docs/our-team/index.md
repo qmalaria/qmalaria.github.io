@@ -56,14 +56,14 @@ icon: lucide/users
     [Kathy Nguyen](kathy-nguyen.md)
     {: .person .title }
   
-- ![Chaya Weerasinghe](../images/chaya-weerasinghe.jpg){ .person }
+- ![Dr Chaya Weerasinghe](../images/chaya-weerasinghe.jpg){ .person }
 
-    [Chaya Weerasinghe](chaya-weerasinghe.md)
+    [Dr Chaya Weerasinghe](chaya-weerasinghe.md)
     {: .person .title }
 
-- ![Rabiah al Adawiyah](../images/rabiah-al-adawiyah.jpg){ .person }
+- ![Dr Rabiah al Adawiyah](../images/rabiah-al-adawiyah.jpg){ .person }
 
-    [Rabiah al Adawiyah](rabiah-al-adawiyah.md)
+    [Dr Rabiah al Adawiyah](rabiah-al-adawiyah.md)
     {: .person .title }
 
 </div>
