@@ -25,4 +25,3 @@ Automated reporting of primaquine dose efficacy tolerability and safety for Plas
 
 Reference for above is: 
 Edler P,… Commons RJ, Automated reporting of primaquine dose efficacy, tolerability and safety for Plasmodium vivax malaria using a systematic review and individual patient data meta-analysis. Malar J. 2025 Nov 14;24(1):400. doi: 10.1186/s12936-025-05642-w. 
-<img width="468" height="92" alt="image" src="https://github.com/user-attachments/assets/5a6588f5-3f6f-4db5-8381-82519a6e5038" />
