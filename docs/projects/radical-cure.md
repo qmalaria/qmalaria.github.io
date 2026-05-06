@@ -21,6 +21,7 @@ icon: lucide/fingerprint-pattern
 
 ## Tools
 Automated reporting of primaquine dose efficacy tolerability and safety for Plasmodium vivax malaria based on a database of individual patient data from antimalarial efficacy studies.
+
 [Automated vivax reports](https://www.iddo.org/wwarn/vivax-reports){ .md-button .md-button--primary }
 
 Reference for above is: 
