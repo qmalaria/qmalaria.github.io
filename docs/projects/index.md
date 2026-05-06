@@ -49,11 +49,11 @@ To improve the design of future studies we have developed a software package tha
 - Meta-analyses to inform optimal primaquine radical cure
     {: .project .title }
 
-    ![Meta-analyses to inform optimal primaquine radical cure](../images/project-radical-cure.png)
+    ![Advanced data analysis to inform optimal antimalarial dosing](../images/project-radical-cure.png)
 
     ---
 
-    We have used individual patient data meta-analyses undertaken through collaboration with the WorldWide Antimalarial Resistance Network (WWARN) to improve our understanding of the risks and benefits of primaquine radical cure and inform policymakers.
+    We have used systematic reviews and individual patient data meta-analyses undertaken through collaboration with the WorldWide Antimalarial Resistance Network (WWARN) to improve our understanding of the risks and benefits of primaquine and tafenoquine and inform policymakers.
 
     [:lucide-arrow-right: Read more](radical-cure.md)
 
