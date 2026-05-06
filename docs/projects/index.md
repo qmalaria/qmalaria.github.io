@@ -46,7 +46,7 @@ To improve the design of future studies we have developed a software package tha
 
     [:lucide-arrow-right: Read more](optimal-sampling.md)
 
-- Meta-analyses to inform optimal primaquine radical cure
+- Advanced data analysis to inform optimal antimalarial dosing
     {: .project .title }
 
     ![Advanced data analysis to inform optimal antimalarial dosing](../images/project-radical-cure.png)
