@@ -35,14 +35,14 @@ To improve the design of future studies we have developed a software package tha
 
     [:lucide-arrow-right: Read more](cost-effectiveness.md)
 
-- Optimal Sampling Schedules
+- Optimal Resource Allocation in Clinical and Public Health Research
     {: .project .title }
 
-    ![Optimal Sampling Schedules](../images/project-optimal-sampling.png)
+    ![Optimal Resourse Allocation in Clinical and Public Health Research](../images/project-optimal-sampling.png)
 
     ---
 
-    There exists a suite of tools within the field of "optimal experimental design" that have been developed to answer the question: "What is the best way to allocate my limited resources, in order to learn the most about the PK-profile of this drug?".
+    Optimising resource allocation is critical for maximising the value of data in clinical trials and epidemiological studies, particularly in resource-constrained settings.
 
     [:lucide-arrow-right: Read more](optimal-sampling.md)
 
