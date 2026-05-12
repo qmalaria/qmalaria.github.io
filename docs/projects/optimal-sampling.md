@@ -2,18 +2,25 @@
 icon: lucide/calendar-check-2
 ---
 
-# Optimal Sampling Schedules
+# Optimal Resource Allocation in Clinical and Public Health Research
 
-Pharmacokinetic (PK) studies are routinely used in the study of malaria to understand, for example, how (and for how long) different drugs act on the malaria parasite, so that we can establish treatment protocols to effectively clear infection.
-Blood samples are taken from study-participants at a number of times post-treatment to monitor the concentration of the drug within an individual.
+Optimising resource allocation is critical for maximising the value of data in clinical trials and epidemiological studies, particularly in resource-constrained settings. Strategic allocation of sampling effort can provide the best information possible for study objectives, within ethical or logistical constraints on available resources. 
 
-The design of these PK-malaria studies – e.g., when to take the blood samples – is often governed by logistical (what time individuals can come into a clinic), financial (how many samples we can afford to measure) and ethical constraints (how many samples we can feasibly take from each individual, and how close these samples can be), coupled with prior knowledge of the drug concentration time profile.
-There exists a suite of tools within the field of "optimal experimental design", that have been developed for this purpose.
-They aim to answer the question: "What is the best way to allocate my limited resources, in order to learn the most about the PK-profile?".
+We have demonstrated this principle across multiple contexts optimal designs for robust inference for pharmacokinetic studies (Jamsen et al., 2011, Jamsen et al. 2013, Price et al., 2018a), bacterial treatment effects (Vlazaki et al., 2020), dose-response studies in the presence of transmission (Price et al., 2018b), and learning transmission characteristics of a pathogen (Price et al. 2016, Lydeamore et al. 2021). Multi-criteria frameworks for surveillance site selection ensures that monitoring resources can be deployed to maximise public health objectives for diseases like Plasmodium knowlesi malaria (Harrison et al., 2024).
 
-We are currently utilising state-of-the-art Bayesian optimal experimental design methods to establish the best use of the limited resources we have in the malaria-affected regions, for the purposes of these PK-studies.
-Going forward, we aim to use these methods to answer other questions of how to design experiments in these regions to more effectively learn about, e.g., the spread of resistant malaria, or how and where to sample during clinical trials of new anti-malarial treatments.
+We integrate mechanistic understanding of disease dynamics with formal statistical inference and optimisation methods to develop and implement methods for identifying the best study designs to answer critical questions more efficiently and ultimately accelerate quality evidence generation to improve clinical and public health decision-making.
+
 
 ## Selected publications
 
-**TODO**
+Jamsen, K.M., Duffull, S.B., Tarning, J. et al. (2011) Optimal designs for population pharmacokinetic studies of oral artesunate in patients with uncomplicated falciparum malaria. Malar J 10, 181.
+
+Jamsen, K.M., Duffull, S.B., Tarning, J. et al. (2013) A robust design for identification of the Parasite Clearance Estimator. Malaria Journal, 12(410). 
+
+Price, D.J., Bean, N.G., Ross, J.V. & Tuke, J. (2018a). An induced natural selection heuristic for finding optimal Bayesian experimental designs. Computational Statistics & Data Analysis, 126, 112–124.
+
+Vlazaki, M., Price, D.J. & Restif, O. (2020). An experimental design tool to optimize inference precision in data-driven mathematical models of bacterial infections in vivo. Journal of the Royal Society Interface, 17(173), 20200717.
+
+Price, D.J., Bean, N.G., Ross, J.V. & Tuke, J. (2018b). Designing group dose-response studies in the presence of transmission. Mathematical Biosciences, 304, 62–78.
+
+Price, D.J., Bean, N.G., Ross, J.V. & Tuke, J. (2016). On the efficient determination of optimal Bayesian experimental designs using ABC: A case study in optimal observation of epidemics. Journal of Statistical Planning and Inference, 172, 1–15.
