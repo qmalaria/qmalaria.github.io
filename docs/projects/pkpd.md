@@ -19,18 +19,6 @@ Tully MK, Dini S, Flegg JA, McCarthy JS, Price DJ, Simpson JA: Evaluation of a B
 Cao P, Kho S, Grigg MJ, Barber BE, Piera KA, William T, Poespoprodjo JR, Jang IK, Simpson JA, McCaw JM, Anstey NM, McCarthy JS, Britton S: Characterisation of Plasmodium vivax lactate dehydrogenase dynamics in P. vivax infections. Commun Biol 2024, 7:355.
 
 Saralamba S, Simpson JA, Choosri N, White L, Pan-Ngum W, Dondorp AM, White NJ: An artesunate pharmacometric model to explain therapeutic responses in falciparum malaria. J Antimicrob Chemother 2023.
-Haghiri A, Price DJ, Fitzpatrick P, Dini S, Rajasekhar M, Fanello C, Tarning J, Watson J, White NJ, Simpson JA: Evidence based optimal dosing of intravenous artesunate in children with severe falciparum malaria. Clin Pharmacol Ther 2023.
-
-Zaloumis SG, Whyte JM, Tarning J, Krishna S, McCaw JM, Cao P, White MT, Dini S, Fowkes FJI, Maude RJ, Kremsner P, Dondorp A, Price RN, White NJ, Simpson JA: Development and Validation of an In Silico Decision Tool To Guide Optimization of Intravenous Artesunate Dosing Regimens for Severe Falciparum Malaria Patients. Antimicrob Agents Chemother 2021, 65.
-
-Tully MK, Commons RJ, Simpson JA, Price DJ: Quantification of cure for pharmacodynamic models of antimalarial drugs: Deterministic versus stochastic approaches. Br J Clin Pharmacol 2026, 92:317-322.
-Moss R, Dini S, Kho S, Barber BE, Buffet PA, Rajasekhar M, Price DJ, Anstey NM, Simpson JA: The role of the spleen in red blood cell loss caused by malaria: A mathematical model. PLoS Comput Biol 2026, 22:e1013865.
-
-Tully MK, Dini S, Flegg JA, McCarthy JS, Price DJ, Simpson JA: Evaluation of a Bayesian hierarchical pharmacokinetic-pharmacodynamic model for predicting parasitological outcomes in Phase 2 studies of new antimalarial drugs. Antimicrob Agents Chemother 2024, 68:e0086324.
-
-Cao P, Kho S, Grigg MJ, Barber BE, Piera KA, William T, Poespoprodjo JR, Jang IK, Simpson JA, McCaw JM, Anstey NM, McCarthy JS, Britton S: Characterisation of Plasmodium vivax lactate dehydrogenase dynamics in P. vivax infections. Commun Biol 2024, 7:355.
-
-Saralamba S, Simpson JA, Choosri N, White L, Pan-Ngum W, Dondorp AM, White NJ: An artesunate pharmacometric model to explain therapeutic responses in falciparum malaria. J Antimicrob Chemother 2023.
 
 Haghiri A, Price DJ, Fitzpatrick P, Dini S, Rajasekhar M, Fanello C, Tarning J, Watson J, White NJ, Simpson JA: Evidence based optimal dosing of intravenous artesunate in children with severe falciparum malaria. Clin Pharmacol Ther 2023.
 
