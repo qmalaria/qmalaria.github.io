@@ -3,7 +3,6 @@ icon: lucide/pocket-knife
 ---
 # Resources
 
-**TODO:** list publications and associated code repositories, dashboards, etc.
 
 <div class="grid cards" markdown>
 
@@ -14,7 +13,7 @@ icon: lucide/pocket-knife
 
     ---
 
-    Description
+    A collection of our publications across the different projects over the years.
 
     [:lucide-arrow-right: Read more](publications.md)
 
@@ -25,7 +24,7 @@ icon: lucide/pocket-knife
 
     ---
 
-    Description
+    Resources created by the qMalaria team.
 
     [:lucide-arrow-right: Read more](tools.md)
 
