@@ -12,7 +12,7 @@ extra_css = [
 
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  { "Welcome" = "index.md" },
+  { "About us" = "index.md" },
   { "Our Team" = [
     "our-team/index.md",
     "our-team/julie-simpson.md",
