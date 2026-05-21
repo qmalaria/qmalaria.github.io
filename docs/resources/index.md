@@ -9,7 +9,7 @@ icon: lucide/pocket-knife
 - Publications
     {: .project .title }
 
-    ![Publications](../images/publication.png)
+    ![Publications](../images/publications.jpg)
 
     ---
 
