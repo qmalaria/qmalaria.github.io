@@ -11,7 +11,7 @@ qMalaria are a group of Data Scientists (biostatisticians, mathematical biologis
 We have developed biologically informed mathematical models for studying antimalarial drug action, Bayesian methods for determining optimal sampling schedules of future antimalarial drug studies, and cost-effectiveness models to improve the management of vivax malaria.
 
 <div class="grid cards" markdown>
-- [![Australian Centre of Research Excellence in Malaria Elimination](images/logo-acreme.svg){ .logo }](https://acreme.edu.au/)
 - [![The University of Melbourne](images/logo-uom.svg){ .logo .uom }](https://www.unimelb.edu.au/)
+- [![Australian Centre of Research Excellence in Malaria Elimination](images/logo-acreme.svg){ .logo }](https://acreme.edu.au/)
 - [![The Victorian Centre for Biostatistics](images/logo-vicbiostat.png){ .logo }](https://www.vicbiostat.org.au/)
 </div>
