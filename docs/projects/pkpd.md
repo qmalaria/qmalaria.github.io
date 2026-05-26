@@ -31,3 +31,5 @@ Cao P, Collins KA, Zaloumis S, Wattanakul T, Tarning J, Simpson JA, McCarthy J, 
 Zaloumis SG, Cao P, Dini S, Davenport MP, Cromer D, Khoury DS, Fowkes FJI, McCaw JM, Simpson JA: In silico investigation of the decline in clinical efficacy of artemisinin combination therapies due to increasing artemisinin and partner drug resistance. Antimicrob Agents Chemother 2018, 62.
 
 Dini S, Zaloumis S, Cao P, Price RN, Fowkes FJI, van der Pluijm RW, McCaw JM, Simpson JA: Investigating the efficacy of triple artemisinin-based combination therapies (TACTs) for treating Plasmodium falciparum malaria patients using mathematical modelling. Antimicrob Agents Chemother 2018, 62:e01068-01018.
+
+Abd-Rahman AN, Zaloumis S, McCarthy JS, Simpson JA, Commons RJ. Scoping review of antimalarial drug candidates in phase I and II drug development. Antimicrobial Agents and Chemotherapy. 2022 Feb 15;66(2):e01659-21.
