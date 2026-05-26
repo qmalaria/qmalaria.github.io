@@ -45,9 +45,11 @@ Commons RJ, et al, Effect of primaquine dose on the risk of recurrence in patien
 
 Rajasekhar M,… Commons RJ, Primaquine dose and the risk of haemolysis in patients with uncomplicated Plasmodium vivax malaria: a systematic review and individual patient data meta-analysis, Lancet Infectious Diseases. 2023 Sep 22:S1473-3099(23)00431-0. doi: 10.1016/S1473-3099(23)00431-0
 
+Mehdipour P, Rajasekhar M, Dini S, Zaloumis S, Abreha T, Adam I, Awab GR, Baird JK, Brasil LW, Chu CS, Cui L. Effect of adherence to primaquine on the risk of Plasmodium vivax recurrence: a WorldWide Antimalarial Resistance Network systematic review and individual patient data meta-analysis. Malaria journal. 2023 Oct 10;22(1):306.
 
 ## 2022
 Watson JA*, Commons RJ* (co-first author),…. The clinical pharmacology of tafenoquine in the radical cure of Plasmodium vivax malaria: An individual patient data meta-analysis, eLife 2022, 11: e83433. doi: 10.7554/eLife.83433 
+Abd-Rahman AN, Zaloumis S, McCarthy JS, Simpson JA, Commons RJ. Scoping review of antimalarial drug candidates in phase I and II drug development. Antimicrobial Agents and Chemotherapy. 2022 Feb 15;66(2):e01659-21.
 
 ## 2021
 Devine A, Battle KE, Meagher N, Howes RE, Dini S, Gething P, Simpson JA, Price RN, Lubell Y. Global economic costs due to vivax malaria and the potential impact of its radical cure: A modelling study. PLoS Medicine 2021; 18(6):e1003614, 1-20. 
