@@ -18,6 +18,7 @@ icon: lucide/fingerprint-pattern
 8.	Commons RJ, Simpson JA, Thriemer K, et al., The haematological consequences of Plasmodium vivax malaria after chloroquine treatment with and without primaquine: a WorldWide Antimalarial Resistance Network systematic review and individual patient data meta-analysis, BMC Medicine, 2019; 17(1): 151. doi: 10.1186/s12916-019-1386-6 
 9.	Commons RJ, Simpson JA, Thriemer K, et al., The effect of dihydroartemisinin-piperaquine and artemether-lumefantrine on the risk of Plasmodium vivax: an individual patient pooled analysis, PLOS Medicine, 2019; 16(10): e1002928. doi: 10.1371/journal.pmed.1002928
 10.	Commons RJ, Simpson JA, Thriemer K, et al., The effect of chloroquine dose and primaquine on Plasmodium vivax recurrence: a WorldWide Antimalarial Resistance Network systematic review and individual patient pooled meta-analysis, Lancet Infectious Diseases, 2018; 18: 1025-1034. doi: 10.1016/S1473-3099(18)30348-7
+11.	Mehdipour P, Rajasekhar M, Dini S, Zaloumis S, Abreha T, Adam I, Awab GR, Baird JK, Brasil LW, Chu CS, Cui L. Effect of adherence to primaquine on the risk of Plasmodium vivax recurrence: a WorldWide Antimalarial Resistance Network systematic review and individual patient data meta-analysis. Malaria journal. 2023 Oct 10;22(1):306.
 
 ## Tools
 Automated reporting of primaquine dose efficacy tolerability and safety for Plasmodium vivax malaria based on a database of individual patient data from antimalarial efficacy studies.
