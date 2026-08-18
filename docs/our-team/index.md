@@ -66,4 +66,8 @@ icon: lucide/users
     [Dr Rabiah al Adawiyah](rabiah-al-adawiyah.md)
     {: .person .title }
 
+- ![Megan Hawkins](../images/megan-hawkins.jpg){ .person }
+
+    [Megan Hawkins](megan-hawkins.md)
+    {: .person .title }
 </div>
