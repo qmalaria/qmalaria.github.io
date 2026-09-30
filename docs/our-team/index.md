@@ -71,8 +71,8 @@ icon: lucide/users
     [Megan Hawkins](megan-hawkins.md)
     {: .person .title }
   
-- ![Lizzie Korevaar](../images/lizzie-korevaar.jpg){ .person }
+- ![Dr Lizzie Korevaar](../images/lizzie-korevaar.jpg){ .person }
 
-    [Lizzie Korevaar](lizzie-korevaar.md)
+    [Dr Lizzie Korevaar](lizzie-korevaar.md)
     {: .person .title }
 </div>
