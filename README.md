@@ -206,3 +206,16 @@ Each page corresponds to a Markdown file in the `./docs` directory:
     git commit -m "Add a profile for Some Person"
     git push
     ```
+
+## How to add a link to a paper
+
+Use the `cite()` macro to insert a link to a paper, as identified by it's DOI.
+For example:
+
+```md
+{{ cite("10.1002/bcp.70340") }}
+```
+
+will produce the following output:
+
+[Tully MK, Commons RJ, Simpson JA, Price DJ. Quantification of cure for pharmacodynamic models of antimalarial drugs: Deterministic versus stochastic approaches. Br J Clin Pharmacol. 2025;92: 317–322. doi:10.1002/bcp.70340](https://doi.org/10.1002/bcp.70340)

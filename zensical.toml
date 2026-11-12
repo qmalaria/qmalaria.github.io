@@ -217,3 +217,10 @@ emoji_generator = "zensical.extensions.emoji.to_svg"
 icon = "fontawesome/brands/github"
 link = "https://github.com/qmalaria/qmalaria.github.io"
 name = "GitHub repository"
+
+[project.plugins.macros]
+module_name = "doicite"
+
+[project.extra.doicite]
+style = "plos"
+lang = "en-US"

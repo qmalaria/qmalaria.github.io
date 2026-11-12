@@ -1,5 +1,8 @@
+certifi==2026.10.23
+charset-normalizer==3.5.2
 click==8.5.0
 deepmerge==4.0.0
+idna==3.20
 Jinja2==3.1.6
 Markdown==3.11.3
 MarkupSafe==3.0.4
@@ -7,6 +10,8 @@ pathspec==1.1.1
 Pygments==2.21.0
 pymdown-extensions==12.3
 PyYAML==6.0.3
+requests==2.34.2
 tomli==2.5.0
-zensical==0.1.0
-zensical-ui==0.0.41
+urllib3==2.8.0
+zensical==0.1.1
+zensical-ui==0.0.42
