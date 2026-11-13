@@ -218,4 +218,7 @@ For example:
 
 will produce the following output:
 
-[Tully MK, Commons RJ, Simpson JA, Price DJ. Quantification of cure for pharmacodynamic models of antimalarial drugs: Deterministic versus stochastic approaches. Br J Clin Pharmacol. 2025;92: 317–322. doi:10.1002/bcp.70340](https://doi.org/10.1002/bcp.70340)
+**Tully MK**, **Commons RJ**, **Simpson JA**, **Price DJ**. Quantification of cure for pharmacodynamic models of antimalarial drugs: Deterministic versus stochastic approaches. Br J Clin Pharmacol. 2025;92: 317–322. doi:[10.1002/bcp.70340](https://doi.org/10.1002/bcp.70340)
+
+> [!NOTE]
+> Check the live preview (a) to verify that the reference is listed correctly; and (b) to record the citation information.

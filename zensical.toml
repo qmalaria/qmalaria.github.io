@@ -222,5 +222,25 @@ name = "GitHub repository"
 module_name = "doicite"
 
 [project.extra.doicite]
-style = "plos"
-lang = "en-US"
+csl_file = "plos.csl"
+authors = [
+  "Abraham P",
+  "Cao P",
+  "Commons RJ",
+  "Chang E",
+  "Devine A",
+  "Dini S",
+  "Flegg JA",
+  "Haghiri A",
+  "Hickson RI",
+  "McCaw JM",
+  "Meagher N",
+  "Mehdipour P",
+  "Moss R",
+  "Price DJ",
+  "Rajasekhar M",
+  "Simpson JA",
+  "Tully MK",
+  "Walker CR",
+  "Zaloumis SG?",
+]

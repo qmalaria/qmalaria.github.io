@@ -5,143 +5,211 @@ Citations are indexed by DOI and stored in a JSON cache file, to avoid having
 to look up each DOI every time the site is updated.
 """
 
-import dataclasses
 import json
-import urllib.parse
+import re
+import tempfile
 from pathlib import Path
 
+import bibtexparser
 import requests
+import zensical
+from citeproc import (
+    Citation,
+    CitationItem,
+    CitationStylesBibliography,
+    CitationStylesStyle,
+    formatter,
+)
+from citeproc.source.bibtex import BibTeX
 
 
-@dataclasses.dataclass
-class Citation:
+def load_items(cache_file: Path) -> dict[str, str]:
     """
-    A formatted citation for a published work.
-
-    :param doi: The DOI associated with the published work.
-    :param url: The URL for resolving the DOI.
-    :param text: The citation text.
-    """
-
-    doi: str
-    url: str
-    text: str
-
-    def link(self) -> str:
-        """
-        Return a hyperlinked citation for this work in Markdown format.
-        """
-        return f"[{self.text}]({self.url})"
-
-
-def load_citations(cache_file: Path) -> dict[str, Citation]:
-    """
-    Load citations from a JSON cache file.
+    Restore saved items from a cache file (if it exists), otherwise return an
+    empty dictionary.
     """
     if cache_file.exists():
         with open(cache_file, "r") as f:
-            cache_data = json.load(f)
-        citations = {
-            doi: Citation(**cite_dict)
-            for doi, cite_dict in cache_data.items()
-        }
+            items: dict[str, str] = json.load(f)
     else:
-        citations = {}
+        items = {}
+    return items
 
-    return citations
 
-
-def save_citations(cache_file: Path, citations: dict[str, Citation]) -> None:
+def save_items(cache_file: Path, items: dict[str, str]) -> None:
     """
-    Save citations to a JSON cache file.
+    Save items to a cache file, first sorting by key (DOI) to ensure that the
+    items are always ordered consistently.
     """
-    # NOTE: we sort by DOI to preserve the citation order in the event that
-    # the cache file is removed and recreated.
-    cite_dicts = {
-        doi: dataclasses.asdict(cite)
-        for (doi, cite) in sorted(citations.items(), key=lambda item: item[0])
+    sorted_items = {
+        key: items[key]
+        for key in sorted(items.keys())
     }
     with open(cache_file, "w") as f:
-        json.dump(cite_dicts, f, indent=2)
+        json.dump(sorted_items, f, indent=2)
 
 
-class Bibliography:
+def get_bib_for(doi: str) -> str:
     """
-    A bibliography that stores cited works in a cache file.
-
-    :param cache_file: The JSON file in which to cache formatted citations.
-    :param style: The citation style.
-    :param lang: The language/locale to use for the citation.
+    Retrieve the BibTeX entry for a DOI.
     """
-    def __init__(self, cache_file: Path, style: str, lang: str) -> None:
-        self.cache_file: Path = cache_file
-        self.style = style
-        self.lang = lang
-        self.citations: dict[str, Citation] = load_citations(cache_file)
-
-
-    def lookup(self, doi: str) -> Citation:
-        """
-        Return a formatted citation associated with the given DOI.
-        """
-        if doi in self.citations:
-            citation = self.citations[doi]
-        else:
-            print(f"Looking up {doi} ...")
-            cite_text = get_citation(doi, self.style, self.lang)
-            citation = Citation(
-                doi=doi,
-                url=get_url(doi),
-                text=cite_text,
-            )
-            self.citations[doi] = citation
-            save_citations(self.cache_file, self.citations)
-
-        return citation
-
-
-def get_citation(doi: str, style: str, lang: str) -> str:
-    """
-    Format the citation for a published work.
-
-    :param doi: The DOI assigned to the published work.
-    :param style: The citation style.
-    :param lang: The language/locale to use for the citation.
-
-    See https://citation.doi.org/api-docs.html for details.
-    """
-    url = "https://citation.doi.org/format"
-    params = {"doi": doi, "style": style, "lang": lang}
-    resp = requests.get(url, params=params)
+    url = f"https://doi.org/{doi}"
+    headers = {"accept": "application/x-bibtex"}
+    resp = requests.get(url, headers=headers)
     resp.raise_for_status()
     resp.encoding = "utf-8"
-    text = resp.text.strip().removeprefix("1.").strip()
+    text = str(resp.text).strip()
     return text
 
 
-def get_url(doi: str) -> str:
+class BibTexSource:
     """
-    Return the URL for resolving a DOI.
-
-    :param doi: The DOI assigned to the published work.
+    Manage a collection of BibTeX entries.
     """
-    doi_enc: str = urllib.parse.quote(doi)
-    return f"https://doi.org/{doi_enc}"
+
+    def __init__(self, bib_file: Path) -> None:
+        self.bib_file = bib_file
+        self.bib_items = load_items(bib_file)
+
+    def lookup(self, doi: str) -> str:
+        """
+        Return the BibTeX entry associated with a DOI.
+        """
+        if doi in self.bib_items:
+            return self.bib_items[doi]
+        print(f"Looking up {doi} ...")
+        text = get_bib_for(doi)
+        self.bib_items[doi] = text
+        save_items(self.bib_file, self.bib_items)
+        return text
 
 
-def define_env(env):
+class BibTexRendered:
+    """
+    Manage a collection of rendered citations.
+    """
+
+    def __init__(self, cache_file: Path, source: BibTexSource) -> None:
+        self.cache_file = cache_file
+        self.rendered_items = load_items(cache_file)
+        self.source = source
+
+    def render(self, doi: str, style: CitationStylesStyle) -> str:
+        """
+        Return the rendered citation for a DOI.
+        """
+        if doi in self.rendered_items:
+            text = self.rendered_items[doi]
+        else:
+            src = self.source.lookup(doi)
+            text = render_bibtex(src, style)
+            self.rendered_items[doi] = text
+            save_items(self.cache_file, self.rendered_items)
+        return text
+
+
+def clean_bib(text: str) -> bibtexparser.library.Library:
+    """
+    Parse a BibTeX entry, removing fields that are not supported by citeproc.
+    """
+    lib = bibtexparser.parse_string(
+        text,
+        append_middleware=[
+            # Transforms {\"o} -> ö, removes curly braces, etc.
+            bibtexparser.middlewares.LatexDecodingMiddleware(),
+            bibtexparser.middlewares.MonthAbbreviationMiddleware(True),
+            # Transforms apr -> 4 etc.
+            bibtexparser.middlewares.MonthIntMiddleware(True),
+        ],
+    )
+
+    if "doi" in lib.entries:
+        lib.entries["DOI"] = "doi"
+    if "url" in lib.entries:
+        lib.entries["URL"] = "url"
+
+    for entry in lib.entries:
+        del entry["month"]
+        del entry["editor"]
+        del entry["doi"]
+        del entry["url"]
+
+    return lib
+
+
+def citeproc_bibtex(lib: bibtexparser.library.Library) -> BibTeX:
+    """
+    Construct a citeproc bibliography for a parsed BibTeX entry.
+    """
+    text = bibtexparser.write_string(lib)
+    with tempfile.NamedTemporaryFile(mode="w", delete_on_close=False) as f:
+        f.write(text)
+        f.close()
+        b = BibTeX(f.name, encoding="utf-8")
+    return b
+
+
+def citeproc_render(bib: BibTeX, style: CitationStylesStyle) -> str:
+    """
+    Render a citeproc bibliography using the specified style.
+    """
+    keys = list(bib.keys())
+    if len(keys) != 1:
+        raise ValueError(keys)
+    key = keys[0]
+    library = CitationStylesBibliography(style, bib, formatter.html)
+    item = CitationItem(key)
+    library.register(Citation([item]))
+    rendered_items: list[str] = library.style.render_bibliography([item])
+    return rendered_items[0]
+
+
+def render_bibtex(src: str, style: CitationStylesStyle) -> str:
+    """
+    Render a BibTeX entry usin the specified style, and convert the DOI into a
+    Markdown hyperlink.
+    """
+    cleaned = clean_bib(src)
+    csl_bib = citeproc_bibtex(cleaned)
+    csl_mixed_string = citeproc_render(csl_bib, style)
+    # NOTE: strip the leading citation number.
+    text_fields = list(csl_mixed_string)[1:]
+    text = "".join(text_fields)
+    # NOTE: collapse whitespace and newlines.
+    rendered = re.sub(r"\s+", " ", text)
+    # NOTE: convert the DOI into a hyperlink.
+    doi = str(cleaned.entries[0]["DOI"])
+    text_out = rendered.replace(doi, f"[{doi}](https://doi.org/{doi})")
+    return text_out
+
+
+def bold_authors(text: str, authors: list[str]) -> str:
+    """
+    Highlight specific authors with bold text.
+    """
+    # NOTE: we use regular expressions so that we can handle, e.g., both
+    # "Zaloumis S" and "Zaloumis SG".
+    for author in authors:
+        text = re.sub(f"({author})", "**\\1**", text)
+    return text
+
+
+def define_env(env: zensical.extensions.macros.MacroEnv) -> None:
     """
     Define the `cite()` macro for the given environment.
     """
     extra = env.variables["extra"]
     config = extra.get("doicite", {})
-    style = config.get("style", "plos")
-    lang = config.get("lang", "en-US")
-    cache_file = config.get("cache_file", "bibliography.json")
+    authors = config.get("authors", [])
+    bib_file = Path(config.get("bibtex_cache", "doicite-bibtex.json"))
+    cache_file = Path(config.get("rendered_cache", "doicite-rendered.json"))
+    csl_file = config.get("csl_file", "plos.csl")
 
-    bib = Bibliography(Path(cache_file), style=style, lang=lang)
+    bib_src = BibTexSource(bib_file)
+    bib_out = BibTexRendered(cache_file, bib_src)
+    csl_style = CitationStylesStyle(csl_file)
 
     @env.macro
     def cite(doi: str) -> str:
-        citation = bib.lookup(doi)
-        return citation.link()
+        markdown_str = bib_out.render(doi, csl_style)
+        return bold_authors(markdown_str, authors)
