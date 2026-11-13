@@ -2,9 +2,9 @@
 site_name = "qMalaria"
 site_description = "Data Scientists who use novel quantitative methods to improve malaria treatment and control."
 site_author = "qMalaria"
-#site_url = "https://www.example.com/"
-repo_url = "https://github.com/qmalaria/qmalaria.github.io"
-edit_uri = "edit/master/docs/"
+site_url = "https://qmalaria.org/"
+#repo_url = "https://github.com/qmalaria/qmalaria.github.io"
+#edit_uri = "edit/master/docs/"
 copyright = ""
 extra_css = [
   "assets/custom_styles.css",
