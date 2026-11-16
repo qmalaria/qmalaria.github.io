@@ -13,11 +13,11 @@ This led to the development of automated reports that provide an overview of pri
 
 [Automated vivax reports](https://www.iddo.org/wwarn/vivax-reports){ .md-button .md-button--primary }
 
-- {{ cite("10.1186/s12936-025-05642-w") }}
+See [Edler et al., 2025](#Edler2025) for details.
 
 ## Selected publications
 
-- {{ cite("10.1186/s12936-025-05642-w") }}
+- {{ cite("10.1186/s12936-025-05642-w", "Edler2025") }}
 
 - {{ cite("10.1371/journal.pmed.1004411") }}
 
