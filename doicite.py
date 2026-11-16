@@ -210,6 +210,10 @@ def define_env(env: zensical.extensions.macros.MacroEnv) -> None:
     csl_style = CitationStylesStyle(csl_file)
 
     @env.macro
-    def cite(doi: str) -> str:
+    def cite(doi: str, anchor: str | None = None) -> str:
         markdown_str = bib_out.render(doi, csl_style)
-        return bold_authors(markdown_str, authors)
+        bolded_str = bold_authors(markdown_str, authors)
+        if anchor is None or anchor == "":
+            return bolded_str
+        else:
+            return f'<span class="cite" id="{anchor}">{bolded_str}</span>'

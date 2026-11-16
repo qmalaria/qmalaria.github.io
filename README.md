@@ -222,3 +222,13 @@ will produce the following output:
 
 > [!NOTE]
 > Check the live preview (a) to verify that the reference is listed correctly; and (b) to record the citation information.
+
+You can also define a name for creating links to the citation, which will be highlighted when the user clicks on the link:
+
+```md
+As shown in [Tully et al., 2025](#Tully2025) ...
+
+- {{ cite("10.1002/bcp.70340", "Tully2025") }}
+```
+
+See the [Optimal Resource Allocation](https://qmalaria.org/projects/optimal-sampling/) project for examples.

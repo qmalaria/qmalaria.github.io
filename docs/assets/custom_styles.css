@@ -35,3 +35,7 @@ img.person {
     font-weight: 700;
     font-size: 125%;
 }
+/* Highlight active citations. */
+span.cite:target {
+  background-color: var(--md-typeset-mark-color);
+}
