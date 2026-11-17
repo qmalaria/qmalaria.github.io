@@ -20,6 +20,8 @@ icon: lucide/book-open-text
 
 {{ cite("10.1186/s12936-025-05642-w") }}
 
+{{ cite("10.1128/aac.01549-24") }}
+
 ## 2024
 
 {{ cite("10.1371/journal.pmed.1004255") }}

@@ -14,6 +14,8 @@ We apply state of the art Bayesian methods to validate the within-host models ag
 
 - {{ cite("10.1371/journal.pcbi.1013865") }}
 
+- {{ cite("10.1128/aac.01549-24") }}
+
 - {{ cite("10.1128/aac.00863-24") }}
 
 - {{ cite("10.1038/s42003-024-05956-6") }}
